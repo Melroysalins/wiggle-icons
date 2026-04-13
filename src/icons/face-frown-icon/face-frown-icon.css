@@ -1,0 +1,46 @@
+.face-circle {
+  transform-origin: 12px 12px;
+}
+
+.face-mouth {
+  transform-origin: 12px 15px;
+}
+
+.face-eye-left {
+  transform-origin: 9.375px 9.75px;
+}
+
+.face-eye-right {
+  transform-origin: 14.625px 9.75px;
+}
+
+@keyframes eyeDroop {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(1.5px); }
+  100% { transform: translateY(1.5px); }
+}
+
+@keyframes mouthSad {
+  0%   { transform: translateY(0px) scaleY(1); }
+  100% { transform: translateY(1.5px) scaleY(1.4); }
+}
+
+@keyframes faceWobble {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(0.92); }
+  60%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.face-frown-icon:hover .face-circle {
+  animation: faceWobble 0.5s ease forwards;
+}
+
+.face-frown-icon:hover .face-eye-left,
+.face-frown-icon:hover .face-eye-right {
+  animation: eyeDroop 0.4s ease forwards;
+}
+
+.face-frown-icon:hover .face-mouth {
+  animation: mouthSad 0.4s ease forwards;
+}

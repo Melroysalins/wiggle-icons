@@ -1,0 +1,31 @@
+.lock-shackle {
+  transform-origin: 13.5px 10.5px;
+}
+
+.lock-body {
+  transform-origin: 9px 17px;
+}
+
+@keyframes lockShackle {
+  0%   { transform: translateX(0px) translateY(0px); }
+  35%  { transform: translateX(-9px) translateY(0px); }
+  60%  { transform: translateX(-9px) translateY(0px); }
+  100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes lockBodyShake {
+  0%   { transform: rotate(0deg); }
+  35%  { transform: rotate(0deg); }
+  45%  { transform: rotate(-3deg); }
+  55%  { transform: rotate(3deg); }
+  65%  { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.lock-icon:hover .lock-shackle {
+  animation: lockShackle 0.8s ease forwards;
+}
+
+.lock-icon:hover .lock-body {
+  animation: lockBodyShake 0.8s ease forwards;
+}

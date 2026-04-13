@@ -1,0 +1,23 @@
+.hash-horizontal-top,
+.hash-horizontal-bottom {
+  opacity: 1;
+}
+
+@keyframes drawHorizontal {
+  0%   { stroke-dashoffset: 16; opacity: 0; }
+  100% { stroke-dashoffset: 0;  opacity: 1; }
+}
+
+.hashtag-icon:hover .hash-horizontal-top {
+  stroke-dasharray: 16;
+  stroke-dashoffset: 16;
+  animation: drawHorizontal 0.25s ease forwards;
+  animation-delay: 0s;
+}
+
+.hashtag-icon:hover .hash-horizontal-bottom {
+  stroke-dasharray: 16;
+  stroke-dashoffset: 16;
+  animation: drawHorizontal 0.25s ease forwards;
+  animation-delay: 0.15s;
+}

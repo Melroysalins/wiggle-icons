@@ -1,0 +1,28 @@
+.at-circle {
+  transform-origin: 12px 12px;
+}
+
+.at-tail {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0s;
+}
+
+@keyframes drawTail {
+  0%   { stroke-dashoffset: 60; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes circlePop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.85); }
+  100% { transform: scale(1); }
+}
+
+.at-sign-icon:hover .at-tail {
+  animation: drawTail 0.5s ease forwards;
+}
+
+.at-sign-icon:hover .at-circle {
+  animation: circlePop 0.5s ease;
+}

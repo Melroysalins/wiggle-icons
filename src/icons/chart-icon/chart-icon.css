@@ -1,0 +1,26 @@
+.bar-left,
+.bar-middle,
+.bar-right {
+  transform-origin: 12px 21px;
+}
+
+@keyframes growUp {
+  0%   { transform: scaleY(0); opacity: 0; }
+  60%  { opacity: 1; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+
+.chart-icon:hover .bar-left {
+  animation: growUp 0.4s ease forwards;
+  animation-delay: 0s;
+}
+
+.chart-icon:hover .bar-middle {
+  animation: growUp 0.4s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.chart-icon:hover .bar-right {
+  animation: growUp 0.4s ease forwards;
+  animation-delay: 0.2s;
+}

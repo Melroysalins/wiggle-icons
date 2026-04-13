@@ -1,0 +1,25 @@
+.bubble-outline {
+  transform-origin: 12px 12px;
+}
+
+@keyframes typingDot {
+  0%,
+  60%,
+  100% { transform: translateY(0px); }
+  30%  { transform: translateY(-2.5px); }
+}
+
+.chat-bubble-icon:hover .dot-one {
+  animation: typingDot 0.8s ease infinite;
+  animation-delay: 0s;
+}
+
+.chat-bubble-icon:hover .dot-two {
+  animation: typingDot 0.8s ease infinite;
+  animation-delay: 0.15s;
+}
+
+.chat-bubble-icon:hover .dot-three {
+  animation: typingDot 0.8s ease infinite;
+  animation-delay: 0.3s;
+}

@@ -1,0 +1,23 @@
+.cursor-arrow {
+  opacity: 1;
+}
+
+.ray-1, .ray-2, .ray-3,
+.ray-4, .ray-5, .ray-6 {
+  opacity: 0;
+  transform-origin: 12px 10.5px;
+}
+
+@keyframes rayPop {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+
+.cursor-arrow-icon:hover .ray-1 { animation: rayPop 0.25s ease forwards; animation-delay: 0.08s; }
+.cursor-arrow-icon:hover .ray-2 { animation: rayPop 0.25s ease forwards; animation-delay: 0.16s; }
+.cursor-arrow-icon:hover .ray-3 { animation: rayPop 0.25s ease forwards; animation-delay: 0.24s; }
+.cursor-arrow-icon:hover .ray-4 { animation: rayPop 0.25s ease forwards; animation-delay: 0.32s; }
+.cursor-arrow-icon:hover .ray-5 { animation: rayPop 0.25s ease forwards; animation-delay: 0.40s; }
+.cursor-arrow-icon:hover .ray-6 { animation: rayPop 0.25s ease forwards; animation-delay: 0.50s; }

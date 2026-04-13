@@ -1,0 +1,46 @@
+.arrow-top-left,
+.arrow-top-right,
+.arrow-bottom-left,
+.arrow-bottom-right {
+  transform-origin: 12px 12px;
+}
+
+@keyframes toTopLeft {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(-3px, -3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes toBottomLeft {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(-3px, 3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes toTopRight {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(3px, -3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes toBottomRight {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(3px, 3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.expand-icon:hover .arrow-top-left {
+  animation: toTopLeft 0.35s ease;
+}
+
+.expand-icon:hover .arrow-bottom-left {
+  animation: toBottomLeft 0.35s ease;
+}
+
+.expand-icon:hover .arrow-top-right {
+  animation: toTopRight 0.35s ease;
+}
+
+.expand-icon:hover .arrow-bottom-right {
+  animation: toBottomRight 0.35s ease;
+}

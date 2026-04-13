@@ -1,0 +1,46 @@
+.arrow-out-top-left,
+.arrow-out-top-right,
+.arrow-out-bottom-left,
+.arrow-out-bottom-right {
+  transform-origin: 12px 12px;
+}
+
+@keyframes outToTopLeft {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(-3px, -3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes outToBottomLeft {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(-3px, 3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes outToTopRight {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(3px, -3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes outToBottomRight {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(3px, 3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.arrow-pointing-out-icon:hover .arrow-out-top-left {
+  animation: outToTopLeft 0.35s ease;
+}
+
+.arrow-pointing-out-icon:hover .arrow-out-bottom-left {
+  animation: outToBottomLeft 0.35s ease;
+}
+
+.arrow-pointing-out-icon:hover .arrow-out-top-right {
+  animation: outToTopRight 0.35s ease;
+}
+
+.arrow-pointing-out-icon:hover .arrow-out-bottom-right {
+  animation: outToBottomRight 0.35s ease;
+}

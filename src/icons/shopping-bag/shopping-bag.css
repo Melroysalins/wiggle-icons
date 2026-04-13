@@ -1,0 +1,20 @@
+
+.icon-svg {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.icon-wrapper:hover .icon-svg {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.icon-wrapper:hover .badge {
+  animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+  0% { transform: translate(40%, -40%) scale(1); }
+  50% { transform: translate(40%, -40%) scale(1.2); }
+  100% { transform: translate(40%, -40%) scale(1); }
+}
+

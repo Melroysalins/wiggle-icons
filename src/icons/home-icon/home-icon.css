@@ -1,0 +1,16 @@
+
+
+.door {
+  transform-origin: center;
+}
+
+@keyframes doorSpin {
+  0%   { transform: perspective(80px) rotateY(0deg); }
+  50%  { transform: perspective(80px) rotateY(180deg); }
+  100% { transform: perspective(80px) rotateY(360deg); }
+}
+
+.home-icon:hover .door {
+  animation: doorSpin 0.6s ease-in-out;
+
+}

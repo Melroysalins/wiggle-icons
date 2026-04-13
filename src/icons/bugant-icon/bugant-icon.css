@@ -1,0 +1,16 @@
+.bug-ant-icon {
+  transform-origin: 12px 12px;
+  display: inline-block;
+}
+
+@keyframes bugWalk {
+  0%   { transform: translateX(0px) rotate(0deg); }
+  25%  { transform: translateX(-1.5px) rotate(-4deg); }
+  50%  { transform: translateX(0px) rotate(0deg); }
+  75%  { transform: translateX(1.5px) rotate(4deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
+}
+
+.bug-ant-icon:hover {
+  animation: bugWalk 0.5s ease infinite;
+}

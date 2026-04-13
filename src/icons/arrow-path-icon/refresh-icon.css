@@ -1,0 +1,14 @@
+.refresh-arc-top,
+.refresh-arc-bottom {
+  transform-origin: 12px 12px;
+}
+
+@keyframes spinRefresh {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.refresh-icon:hover .refresh-arc-top,
+.refresh-icon:hover .refresh-arc-bottom {
+  animation: spinRefresh 0.9s ease forwards;
+}

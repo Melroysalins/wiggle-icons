@@ -1,0 +1,26 @@
+.chevron-right,
+.chevron-left {
+  transform-origin: 12px 12px;
+}
+
+@keyframes chevronFirst {
+  0%   { transform: translateX(0px); }
+  40%  { transform: translateX(-4px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes chevronSecond {
+  0%   { transform: translateX(0px); }
+  40%  { transform: translateX(-4px); }
+  100% { transform: translateX(0px); }
+}
+
+.chevron-double-left-icon:hover .chevron-left {
+  animation: chevronFirst 0.4s ease forwards;
+  animation-delay: 0s;
+}
+
+.chevron-double-left-icon:hover .chevron-right {
+  animation: chevronSecond 0.4s ease forwards;
+  animation-delay: 0.15s;
+}

@@ -1,0 +1,24 @@
+.arrow-left-down,
+.arrow-right-up {
+  transform-origin: 12px 12px;
+}
+
+@keyframes arrowLeft {
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(-4px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes arrowRight {
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(4px); }
+  100% { transform: translateX(0px); }
+}
+
+.swap-icon:hover .arrow-left-down {
+  animation: arrowLeft 0.35s ease;
+}
+
+.swap-icon:hover .arrow-right-up {
+  animation: arrowRight 0.35s ease;
+}

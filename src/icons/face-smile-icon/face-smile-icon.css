@@ -1,0 +1,13 @@
+.face-smile-icon {
+  display: inline-block;
+}
+
+@keyframes gentleBounce {
+  0%   { transform: translateY(0px); }
+  40%  { transform: translateY(-3px); }
+  100% { transform: translateY(0px); }
+}
+
+.face-smile-icon:hover {
+  animation: gentleBounce 0.35s ease forwards;
+}
