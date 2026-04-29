@@ -1,6 +1,6 @@
 {
   "name": "wiggle-icons",
-  "version": "1.0.3",
+   "version": "1.0.4",
   "description": "A collection of animated React SVG icons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
