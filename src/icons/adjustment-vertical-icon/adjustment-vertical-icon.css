@@ -1,0 +1,27 @@
+@keyframes slideDown {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(6px); }
+}
+
+@keyframes slideUp {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+.adj-knob-left,
+.adj-knob-middle,
+.adj-knob-right {
+  animation: none;
+}
+
+.adjustments-vertical-icon:hover .adj-knob-left {
+  animation: slideDown 2s ease-in-out infinite;
+}
+
+.adjustments-vertical-icon:hover .adj-knob-middle {
+  animation: slideUp 2s ease-in-out infinite;
+}
+
+.adjustments-vertical-icon:hover .adj-knob-right {
+  animation: slideDown 2s ease-in-out infinite;
+}

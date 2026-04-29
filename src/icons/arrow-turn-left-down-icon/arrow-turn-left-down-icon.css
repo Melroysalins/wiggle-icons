@@ -1,0 +1,17 @@
+@keyframes drawPath {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.arrow-path {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 0;
+}
+
+.arrow-turn-left-down-icon:hover .arrow-path {
+  animation: drawPath 0.5s ease-out forwards;
+}

@@ -15,10 +15,14 @@ import "./icons/chevron-doubleleft-icon/chevron-doubleleft-icon.css";
 import "./icons/cursor-arrow-raysIcon-icon/cursor-arrow-raysIcon-icon.css";
 import "./icons/face-frown-icon/face-frown-icon.css";
 import "./icons/face-smile-icon/face-smile-icon.css";
+
 import "./icons/lock-open-icon/lock-open-icon.css";
 import "./icons/paper-plane-icon/paper-plane-icon.css";
 import "./icons/rocket-Launch-icon/rocket-Launch-icon.css";
 import "./icons/phone-xmark-icon/phone-xmark-icon.css";
+import "./icons/arrow-trending-down-icon/arrow-trending-down-icon.css";
+import "./icons/adjustment-vertical-icon/adjustment-vertical-icon.css";
+import "./icons/archive-box-icon/archive-box-icon.css";
 import "./icons/arrow-trending-down-icon/arrow-trending-down-icon.css";
 
 
@@ -43,9 +47,13 @@ export { FaceSmileIcon } from "./icons/face-smile-icon/face-smile-icon";
 export { LockOpenIcon } from "./icons/lock-open-icon/lock-open-icon";
 export { RocketLaunchIcon } from "./icons/rocket-Launch-icon/rocket-Launch-icon";
 export { PaperPlaneIcon } from "./icons/paper-plane-icon/paper-plane-icon";
-
 export { PhoneXMarkIcon } from "./icons/phone-xmark-icon/phone-xmark-icon";
+
+
 export { ArrowTrendingDownIcon } from "./icons/arrow-trending-down-icon/arrow-trending-down-icon";
+export { AdjustmentsVerticalIcon } from "./icons/adjustment-vertical-icon/adjustment-vertical-icon";
+export { ArchiveBoxXMarkIcon } from "./icons/archive-box-icon/archive-box-icon";
+export { ArrowTurnLeftDownIcon } from "./icons/arrow-turn-left-down-icon/arrow-turn-left-down-icon";
 
 
 

@@ -76,6 +76,9 @@ standard SVG prop like `className`, `id`, `onClick`, `style` etc:
 | Truck | `TruckIcon` |
 | Phone X Mark | `PhoneXMarkIcon` |
 | Arrow Trending Down | `ArrowTrendingDownIcon` |
+| Adjustments Vertical | `AdjustmentsVerticalIcon` |
+| Archive Box X Mark | `ArchiveBoxXMarkIcon` |
+| Arrow Turn Left Down | `ArrowTurnLeftDownIcon` |
 
 ## License
 

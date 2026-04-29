@@ -23,7 +23,7 @@
     "animated",
     "typescript"
   ],
-  "author": "Your Name",
+  "author": "Melroy",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=17.0.0"
